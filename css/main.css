@@ -87,6 +87,20 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   src: url('../fonts/notosans/NotoSans-Regular.ttf'); 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+h4, p {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700; /* لأجزاء العناوين */
+}
+
+p {
+    font-weight: 400; /* لأجزاء النص العادي */
+}
 
 
 /*[ RESTYLE TAG ]
@@ -96,11 +110,12 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 	margin: 0px; 
 	padding: 0px; 
 	box-sizing: border-box;
+  text-transform: capitalize;
 }
 
 body, html {
 	height: 100%;
-	font-family: Montserrat, sans-serif;
+  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
 }
 
@@ -210,6 +225,7 @@ iframe {
 .slick-slide {
   outline: none !important;
 }
+
 
 /*[ LOADDING ]
 ///////////////////////////////////////////////////////////
@@ -516,20 +532,7 @@ input[type="date" i] {
 /*[ Logo ]
 -----------------------------------------------------------
 */
-.logo {
-  height: 50px;
-}
 
-.logo > a{
-  display: block;
-  height: 100%;
-}
-
-.logo > a > img {
-  width: auto;
-  max-height: 100%;
-  vertical-align: middle;
-}
 
 
 /*[ Menu ]
@@ -809,6 +812,7 @@ input[type="date" i] {
 .wrap-slick2,
 .wrap-slick3 {
   position: relative;
+
 }
 
 .item-slick1,
@@ -817,6 +821,8 @@ input[type="date" i] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: rgba(0, 0, 0, 0.5); /* Change to your preferred color and opacity */
+	z-index: 1;
 }
 .item-slick1 {
   height: 100vh;
