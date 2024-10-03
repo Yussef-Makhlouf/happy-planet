@@ -1465,18 +1465,23 @@ body {padding-right: 0px !important;}
   margin-right: 10px;
   margin-left: 10px;
 }
+.wrap-item-mainmenu h3 {
+  direction: rtl; /* Set text direction to right-to-left */
+  text-align: right; /* Align text to the right */
+}
+
 
 @media (max-width: 576px) {
   .line-item-mainmenu {
-    display: none;
+    display: flex;
   }
 
   .price-item-mainmenu {
-    padding-top: 5px;
+    padding-top: 0px;
   }
 
   .name-item-mainmenu {
-    width: 100%;
+    width: 20%;
   }
 }
 
@@ -1486,10 +1491,41 @@ body {padding-right: 0px !important;}
 */
 
 @media (max-width: 576px) {
+  .blo3 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: right; /* Align text to the right */
+  }
+
+  .pic-blo3 {
+    margin: 0 0 15px; /* Add bottom margin to space out the image */
+    width: 100%; /* Make image container full width */
+    overflow: hidden; /* Hide overflow to maintain shape */
+    border-radius: 10px; /* Add border radius for a smoother look */
+  }
+
+  .pic-blo3 img {
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distorting */
+  }
+
   .text-blo3 {
-    width: 100%;
+    width: 100%; /* Make sure text block takes full width */
+    padding: 0 15px; /* Add padding for better spacing */
+    direction: rtl; /* Set text direction to right-to-left */
+  }
+
+  .txt23, .txt22 {
+    display: block; /* Ensure spans stack vertically */
+    margin: 5px 0; /* Add margin for spacing */
+  }
+
+  .txt22 {
+    font-weight: bold; /* Emphasize price */
   }
 }
+
 
 
 
