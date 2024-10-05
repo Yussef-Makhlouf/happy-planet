@@ -1,44 +1,4 @@
-/*------------------------------------------------------------------
-Project:  Pato
-Version:  
-Last change:  
-Assigned to:  Kevin Nguyen
-Primary use:  Company
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
 
-* body
-  + Header / header
-  + Page Content / .page-content .name-page
-        + Section Layouts / section .name-section
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color 01:  
-# Primary Color 02:   
-# Primary Color 03:  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
--------------------------------------------------------------------*/
-
-
-
-/*[ FONT ]
-///////////////////////////////////////////////////////////
-*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 @import url('https://fonts.googleapis.com/css?family=Courgette');
@@ -385,7 +345,77 @@ input[type="date" i] {
 
 /*[ Select2 ]
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.section-signup {
+  background-color: #f9f9f9;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  text-align: center;
+}
 
+.txt5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.btn3 {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 0.4s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust button size on smaller screens */
+@media (max-width: 768px) {
+  .btn3 {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Add some spacing between the two buttons */
+.btn-separator {
+  width: 50px;
+}
+
+/* Flex container adjustments */
+.flex-c-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-w {
+  flex-wrap: wrap;
+}
+
+/* Adjust flex layout for mobile */
+@media (max-width: 768px) {
+  .flex-c-m {
+      flex-direction: column;
+  }
+
+  .btn-separator {
+      height: 20px;
+      width: 100%;
+  }
+}
+
+/* Additional responsive typography for smaller screens */
+@media (max-width: 576px) {
+  .txt5 {
+      font-size: 1rem;
+  }
+
+  .btn3 {
+      font-size: 0.85rem;
+      padding: 8px 15px;
+  }
+}
 /*[ width select ]
 ===========================================================*/
 .select2-container {
@@ -1114,13 +1144,6 @@ input[type="date" i] {
 } 
 
 
-/*[ Slide3 ]
-///////////////////////////////////////////////////////////
-*/
-
-/*[ Slick3 ]
------------------------------------------------------------
-*/
 
 
 .arrow-slick3 {
@@ -1464,6 +1487,7 @@ body {padding-right: 0px !important;}
   margin-bottom: 5px;
   margin-right: 10px;
   margin-left: 10px;
+  text-align: center;
 }
 .wrap-item-mainmenu h3 {
   direction: rtl; /* Set text direction to right-to-left */
