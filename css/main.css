@@ -1705,3 +1705,22 @@ body {padding-right: 0px !important;}
   border-radius: 10px;
   background-color: #ec1d25;
 }
+/* لضمان تناسب الصور مع جميع الشاشات */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* لضبط حواف الصور بشكل مناسب */
+.bo-rad-10 {
+  border-radius: 10px;
+}
+
+/* تفعيل خصائص المرونة */
+.wrap-content-slide3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
