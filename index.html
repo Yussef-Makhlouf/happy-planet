@@ -36,6 +36,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
+	
 </head>
 
 <body class="animsition">
@@ -313,7 +314,7 @@
 								</h4>
 								<p class="m-b-20">
 									استمتع بوافل هش مغطى بطبقة غنية من الشوكولاتة الذائبة، يقدم مع لمسة من الفواكه الطازجة ليكون الحلوى المثالية.
-								</p>
+								</p>ت
 							</div>
 						</div>
 					</div>
@@ -841,26 +842,107 @@
 
 
 	<!-- Video -->
-	<!-- <section class="section-video parallax100" style="background-image: url(images/bg-cover-video-02.jpg);">
-		<div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15">
-				Discover
-			</span>
+<!-- Enhanced Video Section with Bootstrap -->
+<style>
+	/* Section Styling */
+	.section-video {
+		position: relative;
+		background-image: url('./images/happy_planet/004.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: 100px 0;
+		background-attachment: fixed;
+	}
 
-			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				Our Video
-			</h3>
+	/* Overlay */
+	.section-video .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+	}
 
-			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
-				data-target="#modal-video-01">
-				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
-					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	/* Text Animation */
+	.fade-in-title {
+		opacity: 0;
+		animation: fadeIn 1.5s ease-in-out forwards;
+	}
 
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+		}
+	}
 
+	/* Video Container Styling */
+	.video-container {
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	/* Video Hover Effect */
+	.embed-responsive-item {
+		transition: transform 0.3s ease;
+	}
+
+	.embed-responsive-item:hover {
+		transform: scale(1.03);
+	}
+
+	/* Button Styling */
+	.btn-custom {
+		background-color: #ff5722;
+		color: white;
+		border-radius: 50px;
+		padding: 10px 20px;
+	}
+
+	.btn-custom:hover {
+		background-color: #e64a19;
+	}
+</style>
+</head>
+<body>
+
+<!-- Video Section -->
+<section class="section-video">
+    <!-- Gradient Overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Video Content -->
+    <div class="container position-relative text-center" style="z-index: 2;">
+        <!-- Section Heading -->
+        <h2 class="fade-in-title">Watch Our Video</h2>
+        
+        <!-- Centered Video Row -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="video-container embed-responsive embed-responsive-16by9">
+                    <!-- Embedded Video -->
+                    <iframe
+                        class="embed-responsive-item w-full h-full"
+                        src="./images/happy_planet/video.mp4"
+                        width="560"
+                        height="315"
+                        style="border:none; overflow:hidden;"
+                        scrolling="no"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+						v=""
+					
+                        allowfullscreen="true">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Button -->
+        <a href="#nextSection" class="btn btn-custom mt-5">Explore More</a>
+    </div>
+</section>
 	<!-- Blog -->
 	<section class="section-blog bg-white p-t-115 p-b-123 t-center" dir="rtl">
 		<div class="container">
@@ -1218,7 +1300,7 @@
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/slick-custom.js"></script>
 	<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+	<!-- <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script> -->
 	<script type="text/javascript">
 		$('.parallax100').parallax100();
 	</script>
