@@ -1,0 +1,15 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Disallow:
+
+# Block a specific user-agent from accessing certain directories
+User-agent: Googlebot
+Disallow: /private/
+
+# Block all web crawlers from accessing a certain section
+User-agent: *
+Disallow: /admin/
+
+# Allow specific user-agent to access a directory
+User-agent: Bingbot
+Allow: /public/
